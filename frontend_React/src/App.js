@@ -1,20 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
-function App() {
+import Main from './Component/main'
 
-  const [x,setX]=useState(Math.random())
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setX(Math.random());    
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-  return (
-    <div className="App">
-      <h1>{x}</h1>
-    </div>
-  );
+function App() {
+  return(
+    <Main />
+  )
+
 }
 
 export default App;
