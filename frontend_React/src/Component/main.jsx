@@ -6,7 +6,7 @@ import france from '../assets/france.png'
 import uk from '../assets/uk.jpg'
 import sa from '../assets/sa.png'
 import germany from '../assets/german.jpg'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/flight.jpg'
 import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import FlightsDetails from './FlightsDetails';
