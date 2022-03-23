@@ -7,7 +7,11 @@ import uk from '../assets/uk.jpg'
 import sa from '../assets/sa.png'
 import germany from '../assets/german.jpg'
 import Logo from '../assets/logo.png'
+import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 export default function main() {
+    const percentage = 66;
+
   return (
      <div className='containerGlobal'>
     <div className='container'>
@@ -52,8 +56,8 @@ export default function main() {
                <label>Total soldes</label>
                <p>$25,042</p>
                </div>
-               <div>
-                   <label>snipper</label>
+               <div  style={{ width: 100, height: 100, marginLeft:70 }}>
+               <CircularProgressbar styles={buildStyles({  pathColor: 'red', })} value={percentage} text={`${percentage}%`} />
                </div>
            </div>
            <label>last one</label>
@@ -67,8 +71,8 @@ export default function main() {
                <label>Total soldes</label>
                <p>$25,042</p>
                </div>
-               <div>
-                   <label>snipper</label>
+               <div  style={{ width: 100, height: 100, marginLeft:70 }}>
+               <CircularProgressbar styles={buildStyles({  pathColor:'orange', })} value={percentage} text={`${percentage}%`} />
                </div>
            </div>
            <label>last one</label>
@@ -82,8 +86,8 @@ export default function main() {
                <label>Total soldes</label>
                <p>$25,042</p>
                </div>
-               <div>
-                   <label>snipper</label>
+               <div  style={{ width: 100, height: 100, marginLeft:70 }}>
+               <CircularProgressbar styles={buildStyles({  pathColor: 'green', })} value={percentage} text={`${percentage}%`} />
                </div>
            </div>
            <label>last one</label>
