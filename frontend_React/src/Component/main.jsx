@@ -9,6 +9,7 @@ import germany from '../assets/german.jpg'
 import Logo from '../assets/logo.png'
 import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import FlightsDetails from './FlightsDetails';
 export default function main() {
     const percentage = 66;
 
@@ -93,6 +94,9 @@ export default function main() {
            <label>last one</label>
        </div>
        </div>
+       <h4>Flights Details</h4>
+       <FlightsDetails />
+
     </div>
     </div> 
   )
