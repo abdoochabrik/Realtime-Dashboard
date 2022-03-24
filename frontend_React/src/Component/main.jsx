@@ -50,7 +50,6 @@ export default function main() {
      
        <div className='box'>
            <div className='labeldiv1'>
-           <label className='label1'>20</label>
            </div>
            <div className='boxDiv1'>
                <div >
@@ -65,7 +64,6 @@ export default function main() {
        </div>
        <div className='box'>
            <div className='labeldiv2'>
-           <label className='label1'>10</label>
            </div>
            <div className='boxDiv1'>
                <div >
@@ -80,7 +78,6 @@ export default function main() {
        </div>
        <div className='box'>
            <div className='labeldiv3'>
-           <label className='label1'>5</label>
            </div>
            <div className='boxDiv1'>
                <div >
@@ -93,6 +90,7 @@ export default function main() {
            </div>
            <label>last one</label>
        </div>
+       
        </div>
        <h4>Flights Details</h4>
        <FlightsDetails />
