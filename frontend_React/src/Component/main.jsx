@@ -10,6 +10,7 @@ import Logo from '../assets/flight.jpg'
 import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import FlightsDetails from './FlightsDetails';
+import RightCurve from './RightCurve';
 export default function main() {
     const percentage = 66;
     const date = new Date().toISOString().substring(0,10);
@@ -90,7 +91,9 @@ export default function main() {
            </div>
            <label>last one</label>
        </div>
-       
+       <div>
+           <RightCurve />
+       </div>
        </div>
        <h4>Flights Details</h4>
        <FlightsDetails />
