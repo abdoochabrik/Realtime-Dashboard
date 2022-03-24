@@ -12,7 +12,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import FlightsDetails from './FlightsDetails';
 export default function main() {
     const percentage = 66;
-
+    const date = new Date().toISOString().substring(0,10);
   return (
      <div className='containerGlobal'>
     <div className='container'>
@@ -45,7 +45,7 @@ export default function main() {
         </div>
     </div>
     <div className='container4'>
-       <label className='date'>la date du jour</label>
+       <label className='date'>{date}</label>
        <div className='container5'>
      
        <div className='box'>
