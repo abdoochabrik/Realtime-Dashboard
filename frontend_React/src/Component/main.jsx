@@ -91,12 +91,12 @@ export default function main() {
            </div>
            <label>last one</label>
        </div>
-       <div>
-           <RightCurve />
-       </div>
+     { /* <div>
+       <FlightsDetails />
+  </div> */ }
        </div>
        <h4>Flights Details</h4>
-       <FlightsDetails />
+       <RightCurve />
 
     </div>
     </div> 
