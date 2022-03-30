@@ -13,9 +13,13 @@ box-shadow: 2px -5px 10px -8px rgba(0,0,0,0.55);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-Top: -500px;
+    margin-Top: -830px;
     margin-bottom: 50px;
     position: absolute;
+}
+
+.container {
+    margin-top: 150px;
 }
 
 .container2 {
@@ -48,13 +52,15 @@ box-shadow: 2px -5px 10px -8px rgba(0,0,0,0.55);
 
 .container4 {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container5 {
     display: flex;
     flex-direction: row;
     align-content: space-between;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .box {
     width: 240px;
@@ -72,6 +78,7 @@ box-shadow: -1px -1px 22px -4px #000000;
     background-color: #E8E7E7;
     padding: 8px;
     border-radius: 5px;
+    
 }
 
 .boxDiv1 {
@@ -106,3 +113,24 @@ box-shadow: -1px -1px 22px -4px #000000;
     height: 35px;
   
 }
+.table {
+    border-collapse: collapse;
+    width: 40px;
+
+  }
+  
+ .th, .td {
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .tr:nth-child(even){background-color: #f2f2f2}
+  
+  .th {
+    background-color: #26106A;
+    color: white;
+  }
+
+  .sideContainer {
+      margin-top: 28px;
+  }

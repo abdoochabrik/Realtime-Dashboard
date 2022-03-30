@@ -11,9 +11,23 @@ import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import FlightsDetails from './FlightsDetails';
 import RightCurve from './RightCurve';
+import Table from './Table';
+
 export default function main() {
     const percentage = 66;
     const date = new Date().toISOString().substring(0,10);
+    const TableData = [
+      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+    ]
   return (
      <div className='containerGlobal'>
     <div className='container'>
@@ -23,6 +37,26 @@ export default function main() {
         </div>
         <div className='container1'>
             
+            <div className='container2'>
+                <img src={france} className="image"/>
+                <p className='country'>france</p>
+            </div>
+            <div className='container2'>
+                <img src={sa} className="image"/>
+                <p className='country'>Saudi arabia</p>
+            </div>
+            <div className='container2'>
+                <img src={uk} className="image" />
+                <p className='country'>united kingkdom</p>
+            </div >
+            <div className='container2'>
+                <img src={usa} className="image"/>
+                <p className='country'>USA</p>
+            </div >
+            <div className='container2'>
+                <img src={germany} className="image"/>
+                <p className='country'>allemagne</p>
+            </div>    
             <div className='container2'>
                 <img src={france} className="image"/>
                 <p className='country'>france</p>
@@ -95,9 +129,29 @@ export default function main() {
        <FlightsDetails />
   </div> */ }
        </div>
+       <div className='box2'>
        <h4>Flights Details</h4>
        <RightCurve />
+       </div>
 
+    </div>
+
+    <div className='sideContainer'>
+    <table className='table'>
+    <tr  className='tr'>
+    <th  className='th'>Gare de départ</th>
+    <th className='th'>Gare d'arrivé</th>
+    <th className='th'>Date de départ</th>
+    <th className='th'>statut</th>
+    <th className='th'>temps de retard</th>
+  </tr>
+  <tbody>
+  {  TableData.map(o => (
+    <Table {...o} />
+  )) }
+ </tbody>
+ 
+</table>
     </div>
     </div> 
   )
