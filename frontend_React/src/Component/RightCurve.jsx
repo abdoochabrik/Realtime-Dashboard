@@ -3,12 +3,12 @@ import {Bar} from 'react-chartjs-2'
 import {Chart as ChartJs} from 'chart.js/auto'
 export default function RightCurve() {
     const labels = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
+        'Paris',
+        'Madrid',
+        'Munich',
+        'Québéc',
+        'London',
+        'Washignton',
       ];
     
       const data = {

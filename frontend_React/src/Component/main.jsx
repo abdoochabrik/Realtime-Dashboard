@@ -16,6 +16,7 @@ import Table from './Table';
 export default function main() {
     const percentage = 66;
     const date = new Date().toISOString().substring(0,10);
+
     const TableData = [
       {depart: "Paris", arrivee: "London", date: "12/9/2022", statut: "en retard", retard: "9"},
       {depart: "Lyon", arrivee: "Munich", date: "16/9/2022", statut: "non", retard: "9"},
@@ -89,42 +90,42 @@ export default function main() {
            </div>
            <div className='boxDiv1'>
                <div >
-               <label>Total soldes</label>
-               <p>$25,042</p>
+               <label>vols en retard</label>
+               <p>42 vols</p>
                </div>
                <div  style={{ width: 100, height: 100, marginLeft:70 }}>
                <CircularProgressbar styles={buildStyles({  pathColor: 'red', })} value={percentage} text={`${percentage}%`} />
                </div>
            </div>
-           <label>last one</label>
+           <label>retard ~~ 10 minutes</label>
        </div>
        <div className='box'>
            <div className='labeldiv2'>
            </div>
            <div className='boxDiv1'>
                <div >
-               <label>Total soldes</label>
-               <p>$25,042</p>
+               <label>vols en retard</label>
+               <p>80 vols</p>
                </div>
                <div  style={{ width: 100, height: 100, marginLeft:70 }}>
                <CircularProgressbar styles={buildStyles({  pathColor:'orange', })} value={percentage} text={`${percentage}%`} />
                </div>
            </div>
-           <label>last one</label>
+           <label>retard ~~ 5 minutes</label>
        </div>
        <div className='box'>
            <div className='labeldiv3'>
            </div>
            <div className='boxDiv1'>
                <div >
-               <label>Total soldes</label>
-               <p>$25,042</p>
+               <label>vols en retard</label>
+               <p>64</p>
                </div>
                <div  style={{ width: 100, height: 100, marginLeft:70 }}>
                <CircularProgressbar styles={buildStyles({  pathColor: 'green', })} value={percentage} text={`${percentage}%`} />
                </div>
            </div>
-           <label>last one</label>
+           <label>retard ~~ 2 minutes</label>
        </div>
      { /* <div>
        <FlightsDetails />
