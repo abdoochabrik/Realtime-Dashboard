@@ -133,4 +133,7 @@ box-shadow: -1px -1px 22px -4px #000000;
 
   .sideContainer {
       margin-top: 28px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 750px;
   }

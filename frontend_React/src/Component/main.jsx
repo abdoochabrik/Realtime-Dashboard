@@ -132,7 +132,7 @@ export default function main() {
   </div> */ }
        </div>
        <div className='box2'>
-       <h4>Flights Details</h4>
+       <h4>Détails des vols</h4>
        <RightCurve />
        </div>
 
