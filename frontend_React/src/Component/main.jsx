@@ -17,16 +17,17 @@ export default function main() {
     const percentage = 66;
     const date = new Date().toISOString().substring(0,10);
     const TableData = [
-      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
-      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
-      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
-      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
-      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
-      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
-      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
-      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
-      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
-      {depart: "hhh", arrivee: "mmm", date: "ddd", statut: "llll", retard: "9"},
+      {depart: "Paris", arrivee: "London", date: "12/9/2022", statut: "en retard", retard: "9"},
+      {depart: "Lyon", arrivee: "Munich", date: "16/9/2022", statut: "non", retard: "9"},
+      {depart: "Manchester", arrivee: "Abu dabi", date: "10/9/2022", statut: "non", retard: "9"},
+      {depart: "London", arrivee: "arriyad", date: "14/9/2022", statut: "en retard", retard: "9"},
+      {depart: "Washignton", arrivee: "moscow", date: "6/9/2022", statut: "en retard", retard: "9"},
+      {depart: "Québéc", arrivee: "Madrid", date: "22/9/2022", statut: "non", retard: "9"},
+      {depart: "Paris", arrivee: "Marseille", date: "9/9/2022", statut: "en retard", retard: "9"},
+      {depart: "Paris", arrivee: "Marseille", date: "9/9/2022", statut: "en retard", retard: "9"},
+      {depart: "Roma", arrivee: "Barcelone", date: "11/9/2022", statut: "non", retard: "9"},
+      {depart: "Torino", arrivee: "Rabat", date: "30/9/2022", statut: "en retard", retard: "9"},
+      {depart: "Berlin", arrivee: "Pékin", date: "4/9/2022", statut: "en retard", retard: "9"},
     ]
   return (
      <div className='containerGlobal'>
