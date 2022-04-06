@@ -1,5 +1,4 @@
 import React from 'react'
-import Icon, { FontAwesome, Feather } from 'react-web-vector-icons';
 import './main.css'
 import usa from '../assets/usa.png'
 import france from '../assets/france.png'
