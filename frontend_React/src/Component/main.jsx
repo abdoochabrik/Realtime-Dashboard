@@ -11,6 +11,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import FlightsDetails from './FlightsDetails';
 import RightCurve from './RightCurve';
 import Table from './Table';
+import {io} from 'socket.io-client';
 
 export default function main() {
     const percentage = 66;
@@ -28,8 +29,13 @@ export default function main() {
       {depart: "Roma", arrivee: "Barcelone", date: "11/9/2022", statut: "non", retard: "9"},
       {depart: "Torino", arrivee: "Rabat", date: "30/9/2022", statut: "en retard", retard: "9"},
       {depart: "Berlin", arrivee: "Pékin", date: "4/9/2022", statut: "en retard", retard: "9"},
-    ]
-  return (
+    ];
+
+    const socket = io('http://localhost:8082/user')
+    socket.on("connect", () => {
+        console.log('connected')
+    })
+    return (
      <div className='containerGlobal'>
     <div className='container'>
         <div className='container3'>
