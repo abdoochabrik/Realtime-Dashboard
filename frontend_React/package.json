@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start": "webpack serve --port 8080 --config webpack.config.js",
-    "build": "webpack --config webpack.config.prod.js --mode=production"
+    "build": "webpack --mode production"
   },
   "eslintConfig": {
     "extends": [
