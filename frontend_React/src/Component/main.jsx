@@ -12,10 +12,23 @@ import FlightsDetails from './FlightsDetails';
 import RightCurve from './RightCurve';
 import Table from './Table';
 import {io} from 'socket.io-client';
+import Gare from './Gare'
 
 export default function main() {
     const percentage = 66;
     const date = new Date().toISOString().substring(0,10);
+
+    const gare_départ = [
+        {id:1, départ: "Paris", flag:france},
+        {id:2, départ: "Arriyad", flag:sa},
+        {id:3, départ: "Washington", flag:usa},
+        {id:4, départ: "Berlin", flag:germany},
+        {id:5, départ: "London", flag:uk},
+        {id:6, départ: "London", flag:uk},
+        {id:7, départ: "London", flag:uk},
+        {id:8, départ: "London", flag:uk}
+    ]
+
 
     const TableData = [
       {depart: "Paris", arrivee: "London", date: "12/9/2022", statut: "en retard", retard: "9"},
@@ -43,47 +56,12 @@ export default function main() {
         <h4>Realtime Dashboard</h4>
         </div>
         <div className='container1'>
-            
-            <div className='container2'>
-                <img src={france} className="image"/>
-                <p className='country'>france</p>
-            </div>
-            <div className='container2'>
-                <img src={sa} className="image"/>
-                <p className='country'>Saudi arabia</p>
-            </div>
-            <div className='container2'>
-                <img src={uk} className="image" />
-                <p className='country'>united kingkdom</p>
-            </div >
-            <div className='container2'>
-                <img src={usa} className="image"/>
-                <p className='country'>USA</p>
-            </div >
-            <div className='container2'>
-                <img src={germany} className="image"/>
-                <p className='country'>allemagne</p>
-            </div>    
-            <div className='container2'>
-                <img src={france} className="image"/>
-                <p className='country'>france</p>
-            </div>
-            <div className='container2'>
-                <img src={sa} className="image"/>
-                <p className='country'>Saudi arabia</p>
-            </div>
-            <div className='container2'>
-                <img src={uk} className="image" />
-                <p className='country'>united kingkdom</p>
-            </div >
-            <div className='container2'>
-                <img src={usa} className="image"/>
-                <p className='country'>USA</p>
-            </div >
-            <div className='container2'>
-                <img src={germany} className="image"/>
-                <p className='country'>allemagne</p>
-            </div>    
+           {
+                gare_départ.map(gare => (
+                  <Gare {...gare}/>
+               ))
+           } 
+             
         </div>
     </div>
     <div className='container4'>
@@ -91,8 +69,7 @@ export default function main() {
        <div className='container5'>
      
        <div className='box'>
-           <div className='labeldiv1'>
-           </div>
+           
            <div className='boxDiv1'>
                <div >
                <label>vols en retard</label>
