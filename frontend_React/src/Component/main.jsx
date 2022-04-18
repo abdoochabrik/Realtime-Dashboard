@@ -72,7 +72,8 @@ export default function main() {
        <div className='container5'>
      
        <div className='box'>
-           
+       <div className='labeldiv1'>
+        </div>
            <div className='boxDiv1'>
                <div >
                <label>vols en retard</label>
@@ -117,7 +118,7 @@ export default function main() {
   </div> */ }
        </div>
        <div className='box2'>
-       <h4>Détails des vols</h4>
+       <h4>Détails des vols pour {GareDepart}</h4>
        <RightCurve />
        </div>
 
